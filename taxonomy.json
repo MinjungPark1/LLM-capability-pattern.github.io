@@ -1,0 +1,391 @@
+{
+  "capabilities": [
+    {
+      "capability": "Render image based on topic, mood, tone, keywords, or description",
+      "action": "Generate image",
+      "definition": "Create visual content from textual descriptions, including mood, tone, and keyword-based generation",
+      "theme": "Generate New Content",
+      "icon": "🎨"
+    },
+    {
+      "capability": "Render persona image based on description",
+      "action": "Generate image",
+      "definition": "Create character or persona visualizations from detailed descriptions",
+      "theme": "Generate New Content",
+      "icon": "👤"
+    },
+    {
+      "capability": "Render image that communicates tone or mood based on image",
+      "action": "Generate image",
+      "definition": "Create images that convey specific emotional tones or moods from reference images",
+      "theme": "Generate New Content",
+      "icon": "😊"
+    },
+    {
+      "capability": "Write description based on image",
+      "action": "Generate story, dialog, description, or questions",
+      "definition": "Create detailed textual descriptions from visual content analysis",
+      "theme": "Generate New Content",
+      "icon": "📝"
+    },
+    {
+      "capability": "Write story based on topic or description",
+      "action": "Generate story, dialog, description, or questions",
+      "definition": "Create narrative content from topics, themes, or descriptive prompts",
+      "theme": "Generate New Content",
+      "icon": "📖"
+    },
+    {
+      "capability": "Write description based on keywords",
+      "action": "Generate story, dialog, description, or questions",
+      "definition": "Generate descriptive content from keyword inputs",
+      "theme": "Generate New Content",
+      "icon": "🔑"
+    },
+    {
+      "capability": "Write character's response based on dialog",
+      "action": "Generate story, dialog, description, or questions",
+      "definition": "Create contextual character responses within ongoing conversations",
+      "theme": "Generate New Content",
+      "icon": "💬"
+    },
+    {
+      "capability": "Write code based on task description",
+      "action": "Transform description into computer program",
+      "definition": "Generate functional code from natural language task descriptions",
+      "theme": "Transform Content",
+      "icon": "💻"
+    },
+    {
+      "capability": "Transcribe into text from speech",
+      "action": "Transform speech into text",
+      "definition": "Convert spoken audio content into written text format",
+      "theme": "Transform Content",
+      "icon": "🎤"
+    },
+    {
+      "capability": "Translate into description from code",
+      "action": "Transform computer program into description",
+      "definition": "Convert programming code into human-readable descriptions",
+      "theme": "Transform Content",
+      "icon": "📄"
+    },
+    {
+      "capability": "Vocalize into speech based on transcript",
+      "action": "Transform text into speech",
+      "definition": "Convert written text into spoken audio output",
+      "theme": "Transform Content",
+      "icon": "🔊"
+    },
+    {
+      "capability": "Answer product-question based on product description",
+      "action": "Understand; answer question",
+      "definition": "Provide answers to product-related questions using product information",
+      "theme": "Understand Content",
+      "icon": "🛍️"
+    },
+    {
+      "capability": "Answer question based on earlier mentions",
+      "action": "Understand; answer question",
+      "definition": "Respond to questions using context from previous conversation or content",
+      "theme": "Understand Content",
+      "icon": "🔄"
+    },
+    {
+      "capability": "Answer how-to based on question about programming or science",
+      "action": "Understand; answer question",
+      "definition": "Provide instructional answers for technical and scientific questions",
+      "theme": "Understand Content",
+      "icon": "🔬"
+    },
+    {
+      "capability": "Rank program function based on point in computer code",
+      "action": "Understand; rank actions, elements, and qualities",
+      "definition": "Evaluate and rank programming functions within code context",
+      "theme": "Understand Content",
+      "icon": "📊"
+    },
+    {
+      "capability": "Rank personas based on description",
+      "action": "Understand; rank actions, elements, and qualities",
+      "definition": "Evaluate and rank character personas based on descriptive criteria",
+      "theme": "Understand Content",
+      "icon": "👥"
+    },
+    {
+      "capability": "Rank color scheme based on description",
+      "action": "Understand; rank actions, elements, and qualities",
+      "definition": "Evaluate and rank color combinations based on design descriptions",
+      "theme": "Understand Content",
+      "icon": "🎨"
+    },
+    {
+      "capability": "Rank keyword suggestions based on a point in prompt",
+      "action": "Understand; rank actions, elements, and qualities",
+      "definition": "Evaluate and rank keyword options based on prompt context",
+      "theme": "Understand Content",
+      "icon": "🔑"
+    },
+    {
+      "capability": "Find similar keywords or document based on dialog, documents, or description",
+      "action": "Find similar content",
+      "definition": "Identify related keywords or documents based on content similarity",
+      "theme": "Understand Content",
+      "icon": "🔍"
+    },
+    {
+      "capability": "Find similar element in image based on group of images",
+      "action": "Find similar content",
+      "definition": "Identify similar visual elements across multiple images",
+      "theme": "Understand Content",
+      "icon": "🖼️"
+    },
+    {
+      "capability": "Identify inappropriate/offensive response based on dialog",
+      "action": "Recognize things in content",
+      "definition": "Detect and flag inappropriate or offensive content in conversations",
+      "theme": "Understand Content",
+      "icon": "🚫"
+    },
+    {
+      "capability": "Identify if person is in image from images",
+      "action": "Recognize things in content",
+      "definition": "Detect human presence in visual content",
+      "theme": "Understand Content",
+      "icon": "👤"
+    },
+    {
+      "capability": "Identify sections/elements (problems, methods) based on research paper or dialog",
+      "action": "Recognize things in content",
+      "definition": "Extract and categorize specific sections from academic or conversational content",
+      "theme": "Understand Content",
+      "icon": "📚"
+    },
+    {
+      "capability": "Identify argument from document, image, or dialog",
+      "action": "Recognize things in content",
+      "definition": "Extract and identify argumentative content from various media types",
+      "theme": "Understand Content",
+      "icon": "💭"
+    },
+    {
+      "capability": "Identify sentiment from document, image, or dialog",
+      "action": "Recognize things in content",
+      "definition": "Analyze emotional tone and sentiment across different content types",
+      "theme": "Understand Content",
+      "icon": "😊"
+    },
+    {
+      "capability": "Interpret explanation based on professional terms",
+      "action": "Understand subtext",
+      "definition": "Translate professional terminology into accessible explanations",
+      "theme": "Understand Content",
+      "icon": "📖"
+    },
+    {
+      "capability": "Interpret a question to ask someone based on dialog or story",
+      "action": "Understand subtext",
+      "definition": "Generate relevant questions based on conversation or narrative context",
+      "theme": "Understand Content",
+      "icon": "❓"
+    },
+    {
+      "capability": "Interpret reason based on a professional knowledge",
+      "action": "Understand subtext",
+      "definition": "Provide reasoning explanations using domain-specific knowledge",
+      "theme": "Understand Content",
+      "icon": "🧠"
+    },
+    {
+      "capability": "Summarize into keywords/bullets based on document, dialog, or diary",
+      "action": "Summarize content",
+      "definition": "Extract key points and create bullet-point summaries from various content types",
+      "theme": "Understand Content",
+      "icon": "📋"
+    },
+    {
+      "capability": "Summarize into few sentences based on documents, stories, or dialog",
+      "action": "Summarize content",
+      "definition": "Create concise sentence-based summaries from longer content",
+      "theme": "Understand Content",
+      "icon": "📝"
+    },
+    {
+      "capability": "Refine document's tone of voice based on document and tone",
+      "action": "Improve content quality",
+      "definition": "Adjust and improve the tone and style of written content",
+      "theme": "Understand Content",
+      "icon": "✏️"
+    },
+    {
+      "capability": "Refine grammar within text",
+      "action": "Improve content quality",
+      "definition": "Correct and improve grammatical structure in written content",
+      "theme": "Understand Content",
+      "icon": "📝"
+    },
+    {
+      "capability": "Refine into more explicit/effective prompt based on vague prompt",
+      "action": "Improve content quality",
+      "definition": "Transform unclear prompts into more specific and effective instructions",
+      "theme": "Understand Content",
+      "icon": "🎯"
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "Chatbot",
+      "category": "Interaction Design",
+      "description": "Enable users to ask questions one at a time and provide step-by-step support to guide them through solving problems",
+      "use_case": "Learning complex topics, problem-solving assistance, replacing human agents for non-critical tasks",
+      "icon": "💬"
+    },
+    {
+      "pattern": "Dimension Discovery",
+      "category": "Interaction Design",
+      "description": "Provide synthesized data and structured frameworks to help users learn and discover relevant criteria for decision-making",
+      "use_case": "Decision-making support, criteria identification, data exploration",
+      "icon": "🔍"
+    },
+    {
+      "pattern": "Generate from Example",
+      "category": "Interaction Design",
+      "description": "Facilitate communication by allowing users to express intentions through examples like moodboards",
+      "use_case": "Design inspiration, style transfer, creative direction, preference expression",
+      "icon": "🎨"
+    },
+    {
+      "pattern": "Option Expansion",
+      "category": "Interaction Design",
+      "description": "Generate variety of examples to help users explore and recognize what aligns with their preferences",
+      "use_case": "Product selection, design choices, preference discovery, exploratory search",
+      "icon": "🔀"
+    },
+    {
+      "pattern": "Iterative Refinement",
+      "category": "Interaction Design",
+      "description": "Guide users in refining ideas iteratively and in real-time to identify specific desires",
+      "use_case": "Content creation, design iteration, idea development, real-time collaboration",
+      "icon": "🔄"
+    },
+    {
+      "pattern": "Supplementary Completion",
+      "category": "Interaction Design",
+      "description": "Complete tasks with updated drafts when users have partial work but struggle to finish",
+      "use_case": "Document completion, content finishing, draft enhancement, task assistance",
+      "icon": "✏️"
+    },
+    {
+      "pattern": "Pathway to Start",
+      "category": "Interaction Design",
+      "description": "Provide drafts, intermediate results, or initial methods to help users overcome blank page syndrome",
+      "use_case": "Content creation, project initiation, overcoming writer's block, getting started",
+      "icon": "🚀"
+    },
+    {
+      "pattern": "Chain of Thought",
+      "category": "Reasoning",
+      "description": "Break down complex problems into step-by-step reasoning to improve accuracy",
+      "use_case": "Mathematical problems, logical reasoning, complex decision making",
+      "icon": "🔗"
+    },
+    {
+      "pattern": "Few-Shot Learning",
+      "category": "Learning",
+      "description": "Provide examples in the prompt to guide the model's behavior and improve performance",
+      "use_case": "Task-specific formatting, style transfer, specialized responses",
+      "icon": "🎯"
+    },
+    {
+      "pattern": "Retrieval-Augmented Generation (RAG)",
+      "category": "Information",
+      "description": "Combine external knowledge retrieval with text generation for accurate, up-to-date responses",
+      "use_case": "Question answering, document analysis, real-time information",
+      "icon": "📚"
+    },
+    {
+      "pattern": "Function Calling",
+      "category": "Integration",
+      "description": "Enable LLMs to call external functions and APIs to perform actions",
+      "use_case": "Database queries, API integrations, tool usage",
+      "icon": "⚙️"
+    },
+    {
+      "pattern": "Prompt Engineering",
+      "category": "Optimization",
+      "description": "Design effective prompts to get desired outputs from language models",
+      "use_case": "Content generation, task specification, output formatting",
+      "icon": "✏️"
+    },
+    {
+      "pattern": "Fine-tuning",
+      "category": "Customization",
+      "description": "Train models on specific datasets to improve performance on particular tasks",
+      "use_case": "Domain-specific applications, specialized knowledge, custom behaviors",
+      "icon": "🎛️"
+    },
+    {
+      "pattern": "Multi-Agent Systems",
+      "category": "Architecture",
+      "description": "Coordinate multiple AI agents to solve complex problems collaboratively",
+      "use_case": "Complex workflows, specialized expertise, distributed problem solving",
+      "icon": "🤝"
+    },
+    {
+      "pattern": "Constitutional AI",
+      "category": "Safety",
+      "description": "Implement safety constraints and ethical guidelines in AI systems",
+      "use_case": "Content moderation, ethical AI, responsible deployment",
+      "icon": "🛡️"
+    },
+    {
+      "pattern": "Memory Systems",
+      "category": "Context",
+      "description": "Maintain long-term memory and context across conversations and sessions",
+      "use_case": "Personal assistants, ongoing projects, user preference learning",
+      "icon": "🧠"
+    },
+    {
+      "pattern": "Tool Use",
+      "category": "Capability Extension",
+      "description": "Enable LLMs to use external tools and resources to extend their capabilities",
+      "use_case": "Web search, calculations, file operations, external APIs",
+      "icon": "🔧"
+    },
+    {
+      "pattern": "Self-Consistency",
+      "category": "Reliability",
+      "description": "Generate multiple responses and select the most consistent or common answer",
+      "use_case": "Factual accuracy, confidence estimation, error reduction",
+      "icon": "✅"
+    },
+    {
+      "pattern": "Tree of Thoughts",
+      "category": "Reasoning",
+      "description": "Explore multiple reasoning paths simultaneously to find optimal solutions",
+      "use_case": "Complex problem solving, game playing, strategic planning",
+      "icon": "🌳"
+    },
+    {
+      "pattern": "ReAct (Reasoning + Acting)",
+      "category": "Problem Solving",
+      "description": "Combine reasoning and action-taking to solve problems iteratively",
+      "use_case": "Multi-step problem solving, interactive tasks, dynamic environments",
+      "icon": "⚡"
+    },
+    {
+      "pattern": "Constrained Generation",
+      "category": "Control",
+      "description": "Apply constraints to ensure outputs meet specific requirements or formats",
+      "use_case": "Structured outputs, compliance, format requirements",
+      "icon": "🎛️"
+    },
+    {
+      "pattern": "Ensemble Methods",
+      "category": "Performance",
+      "description": "Combine multiple models or approaches to improve overall performance",
+      "use_case": "Accuracy improvement, robustness, specialized expertise",
+      "icon": "🎭"
+    }
+  ]
+} 

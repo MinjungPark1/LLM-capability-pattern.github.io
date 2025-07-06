@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM Capabilities & Patterns</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>LLM Capabilities & Patterns</h1>
+    <nav class="main-nav">
+      <button id="tab-capabilities" class="nav-tab active">Capabilities</button>
+      <button id="tab-patterns" class="nav-tab">Patterns</button>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="capabilities-section" class="active-section">
+      <div class="capabilities-container">
+        <!-- Generate Contents -->
+        <div class="first-level-category">
+          <h2 class="category-title">Generate Contents</h2>
+          <div class="capability-cards-grid">
+            <div class="capability-card" data-capability="Write">
+              <div class="card-icon">📝</div>
+              <h3 class="card-title">Write</h3>
+              <p class="card-description">Generate text content based on various inputs</p>
+              <div class="card-examples-count">4 examples</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Render">
+              <div class="card-icon">🎨</div>
+              <h3 class="card-title">Render</h3>
+              <p class="card-description">Create visual content from descriptions</p>
+              <div class="card-examples-count">3 examples</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transform Contents -->
+        <div class="first-level-category">
+          <h2 class="category-title">Transform Contents</h2>
+          <div class="capability-cards-grid">
+            <div class="capability-card" data-capability="Code">
+              <div class="card-icon">💻</div>
+              <h3 class="card-title">Code</h3>
+              <p class="card-description">Generate code from natural language</p>
+              <div class="card-examples-count">1 example</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Transcribe">
+              <div class="card-icon">🎤</div>
+              <h3 class="card-title">Transcribe</h3>
+              <p class="card-description">Convert speech to text</p>
+              <div class="card-examples-count">1 example</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Translate">
+              <div class="card-icon">📄</div>
+              <h3 class="card-title">Translate</h3>
+              <p class="card-description">Convert between different formats</p>
+              <div class="card-examples-count">1 example</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Vocalize">
+              <div class="card-icon">🔊</div>
+              <h3 class="card-title">Vocalize</h3>
+              <p class="card-description">Convert text to speech</p>
+              <div class="card-examples-count">1 example</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Understanding Contents -->
+        <div class="first-level-category">
+          <h2 class="category-title">Understanding Contents</h2>
+          <div class="capability-cards-grid">
+            <div class="capability-card" data-capability="Answer">
+              <div class="card-icon">❓</div>
+              <h3 class="card-title">Answer</h3>
+              <p class="card-description">Provide answers to questions</p>
+              <div class="card-examples-count">3 examples</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Rank">
+              <div class="card-icon">📊</div>
+              <h3 class="card-title">Rank</h3>
+              <p class="card-description">Evaluate and rank items</p>
+              <div class="card-examples-count">4 examples</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Find Similar">
+              <div class="card-icon">🔍</div>
+              <h3 class="card-title">Find Similar</h3>
+              <p class="card-description">Identify similar content</p>
+              <div class="card-examples-count">2 examples</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Identify">
+              <div class="card-icon">🎯</div>
+              <h3 class="card-title">Identify</h3>
+              <p class="card-description">Recognize elements in content</p>
+              <div class="card-examples-count">5 examples</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Interpret">
+              <div class="card-icon">🧠</div>
+              <h3 class="card-title">Interpret</h3>
+              <p class="card-description">Understand and explain content</p>
+              <div class="card-examples-count">3 examples</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Summarize">
+              <div class="card-icon">📋</div>
+              <h3 class="card-title">Summarize</h3>
+              <p class="card-description">Create concise summaries</p>
+              <div class="card-examples-count">2 examples</div>
+            </div>
+            
+            <div class="capability-card" data-capability="Refine">
+              <div class="card-icon">✏️</div>
+              <h3 class="card-title">Refine</h3>
+              <p class="card-description">Improve and enhance content</p>
+              <div class="card-examples-count">3 examples</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="patterns-section" style="display:block;">
+      <div class="patterns-container">
+        <div class="pattern-card" data-pattern="Chatbot">
+          <div class="card-icon">💬</div>
+          <h3 class="card-title">Chatbot</h3>
+          <p class="card-problem">Need to collect customer information</p>
+          <div class="card-examples-count">3 examples</div>
+        </div>
+
+        <div class="pattern-card" data-pattern="Reveal Dimensions">
+          <div class="card-icon">🔍</div>
+          <h3 class="card-title">Reveal Dimensions</h3>
+          <p class="card-problem">Uncertain about which dimensions are important for content creation and decision-making</p>
+          <div class="card-examples-count">2 examples</div>
+        </div>
+
+        <div class="pattern-card" data-pattern="Something Like This">
+          <div class="card-icon">🎨</div>
+          <h3 class="card-title">Something Like This</h3>
+          <p class="card-problem">Struggle to communicate their desire in words</p>
+          <div class="card-examples-count">4 examples</div>
+        </div>
+
+        <div class="pattern-card" data-pattern="Dessert Cart">
+          <div class="card-icon">🔀</div>
+          <h3 class="card-title">Dessert Cart</h3>
+          <p class="card-problem">Lack clarity about their overall desires. Uncertain about what they want</p>
+          <div class="card-examples-count">3 examples</div>
+        </div>
+
+        <div class="pattern-card" data-pattern="Refine This">
+          <div class="card-icon">🔄</div>
+          <h3 class="card-title">Refine This</h3>
+          <p class="card-problem">Lack specificity regarding the details of their desires. Unsure of how to improve something</p>
+          <div class="card-examples-count">2 examples</div>
+        </div>
+
+        <div class="pattern-card" data-pattern="Complete This">
+          <div class="card-icon">✏️</div>
+          <h3 class="card-title">Complete This</h3>
+          <p class="card-problem">Struggle to complete a communication task</p>
+          <div class="card-examples-count">3 examples</div>
+        </div>
+
+        <div class="pattern-card" data-pattern="Blank Page Paralysis">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">Blank Page Paralysis</h3>
+          <p class="card-problem">Feel overwhelmed by a blank page and are unsure how to start</p>
+          <div class="card-examples-count">2 examples</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for showing examples -->
+  <div id="examples-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-title">Capability Examples</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div id="modal-examples" class="modal-examples">
+        <!-- Examples will be populated here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for showing pattern details -->
+  <div id="pattern-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="pattern-modal-title">Pattern Details</h2>
+        <button class="pattern-modal-close">&times;</button>
+      </div>
+      <div id="pattern-modal-content" class="modal-examples">
+        <!-- Pattern details will be populated here -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Test function to manually show patterns
+    function testShowPatterns() {
+      console.log('Testing patterns display...');
+      const patternsSection = document.getElementById('patterns-section');
+      if (patternsSection) {
+        patternsSection.style.display = 'block';
+        console.log('Patterns section should now be visible');
+      } else {
+        console.log('Patterns section not found!');
+      }
+    }
+    
+    // Pattern data with problems and solutions
+    const patternData = {
+      "Chatbot": {
+        problem: "Need to collect customer information",
+        solution: "Collects the needed information by having a chatbot interview"
+      },
+      "Reveal Dimensions": {
+        problem: "Uncertain about which dimensions are important for content creation and decision-making",
+        solution: "Surfaces the dimensions others have used or previous users found useful"
+      },
+      "Something Like This": {
+        problem: "Struggle to communicate their desire in words",
+        solution: "Express desires through examples"
+      },
+      "Dessert Cart": {
+        problem: "Lack clarity about their overall desires. Uncertain about what they want",
+        solution: "Provide multiple versions of what they are looking for"
+      },
+      "Refine This": {
+        problem: "Lack specificity regarding the details of their desires. Unsure of how to improve something",
+        solution: "Guides users in refining their ideas in real-time"
+      },
+      "Complete This": {
+        problem: "Struggle to complete a communication task",
+        solution: "Provides updated drafts and guidance to help users complete content creation tasks"
+      },
+      "Blank Page Paralysis": {
+        problem: "Feel overwhelmed by a blank page and are unsure how to start",
+        solution: "Generates an initial draft, intermediate result, or suggested methods and materials"
+      }
+    };
+
+    // Capability examples data
+    const capabilityExamples = {
+      "Write": [
+        { icon: "📝", text: "Write description based on image" },
+        { icon: "📖", text: "Write story based on topic or description" },
+        { icon: "🔑", text: "Write description based on keywords" },
+        { icon: "💬", text: "Write character's response based on dialog" }
+      ],
+      "Render": [
+        { icon: "🎨", text: "Render image based on topic, mood, tone, keywords, or description" },
+        { icon: "👤", text: "Render persona image based on description" },
+        { icon: "😊", text: "Render image that communicates tone or mood based on image" }
+      ],
+      "Code": [
+        { icon: "💻", text: "Write code based on task description" }
+      ],
+      "Transcribe": [
+        { icon: "🎤", text: "Transcribe into text from speech" }
+      ],
+      "Translate": [
+        { icon: "📄", text: "Translate into description from code" }
+      ],
+      "Vocalize": [
+        { icon: "🔊", text: "Vocalize into speech based on transcript" }
+      ],
+      "Answer": [
+        { icon: "🛍️", text: "Answer product-question based on product description" },
+        { icon: "🔄", text: "Answer question based on earlier mentions" },
+        { icon: "🔬", text: "Answer how-to based on question about programming or science" }
+      ],
+      "Rank": [
+        { icon: "📊", text: "Rank program function based on point in computer code" },
+        { icon: "👥", text: "Rank personas based on description" },
+        { icon: "🎨", text: "Rank color scheme based on description" },
+        { icon: "🔑", text: "Rank keyword suggestions based on a point in prompt" }
+      ],
+      "Find Similar": [
+        { icon: "🔍", text: "Find similar keywords or document based on dialog, documents, or description" },
+        { icon: "🖼️", text: "Find similar element in image based on group of images" }
+      ],
+      "Identify": [
+        { icon: "🚫", text: "Identify inappropriate/offensive response based on dialog" },
+        { icon: "👤", text: "Identify if person is in image from images" },
+        { icon: "📚", text: "Identify sections/elements (problems, methods) based on research paper or dialog" },
+        { icon: "💭", text: "Identify argument from document, image, or dialog" },
+        { icon: "😊", text: "Identify sentiment from document, image, or dialog" }
+      ],
+      "Interpret": [
+        { icon: "📖", text: "Interpret explanation based on professional terms" },
+        { icon: "❓", text: "Interpret a question to ask someone based on dialog or story" },
+        { icon: "🧠", text: "Interpret reason based on a professional knowledge" }
+      ],
+      "Summarize": [
+        { icon: "📋", text: "Summarize into keywords/bullets based on document, dialog, or diary" },
+        { icon: "📝", text: "Summarize into few sentences based on documents, stories, or dialog" }
+      ],
+      "Refine": [
+        { icon: "✏️", text: "Refine document's tone of voice based on document and tone" },
+        { icon: "📝", text: "Refine grammar within text" },
+        { icon: "🎯", text: "Refine into more explicit/effective prompt based on vague prompt" }
+      ]
+    };
+
+    function showSection(sectionId) {
+      console.log('Showing section:', sectionId);
+      const capabilitiesSection = document.getElementById('capabilities-section');
+      const patternsSection = document.getElementById('patterns-section');
+      
+      if (sectionId === 'capabilities-section') {
+        capabilitiesSection.style.display = '';
+        patternsSection.style.display = 'none';
+        console.log('Capabilities section displayed');
+      } else if (sectionId === 'patterns-section') {
+        capabilitiesSection.style.display = 'none';
+        patternsSection.style.display = '';
+        console.log('Patterns section displayed');
+      }
+    }
+
+    function setActiveTab(tabId) {
+      document.getElementById('tab-capabilities').classList.toggle('active', tabId === 'tab-capabilities');
+      document.getElementById('tab-patterns').classList.toggle('active', tabId === 'tab-patterns');
+    }
+
+    function setupTabs() {
+      document.getElementById('tab-capabilities').addEventListener('click', () => {
+        console.log('Capabilities tab clicked');
+        showSection('capabilities-section');
+        setActiveTab('tab-capabilities');
+      });
+      document.getElementById('tab-patterns').addEventListener('click', () => {
+        console.log('Patterns tab clicked');
+        showSection('patterns-section');
+        setActiveTab('tab-patterns');
+      });
+    }
+
+    function setupCapabilityCards() {
+      const capabilityCards = document.querySelectorAll('.capability-card');
+      const modal = document.getElementById('examples-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalExamples = document.getElementById('modal-examples');
+      const modalClose = document.querySelector('.modal-close');
+      
+      capabilityCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const capability = card.getAttribute('data-capability');
+          const examples = capabilityExamples[capability];
+          
+          modalTitle.textContent = `${capability} Examples`;
+          modalExamples.innerHTML = '';
+          
+          examples.forEach(example => {
+            const exampleElement = document.createElement('div');
+            exampleElement.className = 'modal-example';
+            exampleElement.innerHTML = `
+              <div class="example-icon">${example.icon}</div>
+              <div class="example-text">${example.text}</div>
+            `;
+            modalExamples.appendChild(exampleElement);
+          });
+          
+          modal.style.display = 'flex';
+        });
+      });
+      
+      // Close modal when clicking close button or outside modal
+      modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+      
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+
+    function setupPatternCards() {
+      const patternCards = document.querySelectorAll('.pattern-card');
+      const patternModal = document.getElementById('pattern-modal');
+      const patternModalTitle = document.getElementById('pattern-modal-title');
+      const patternModalContent = document.getElementById('pattern-modal-content');
+      const patternModalClose = document.querySelector('.pattern-modal-close');
+      
+      patternCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const pattern = card.getAttribute('data-pattern');
+          const data = patternData[pattern];
+          
+          patternModalTitle.textContent = pattern;
+          patternModalContent.innerHTML = `
+            <div class="pattern-detail-section">
+              <h3 class="pattern-detail-title problem">Problem</h3>
+              <p class="pattern-detail-text problem">${data.problem}</p>
+            </div>
+            <div class="pattern-detail-section">
+              <h3 class="pattern-detail-title solution">Solution</h3>
+              <p class="pattern-detail-text solution">${data.solution}</p>
+            </div>
+            <div class="pattern-detail-section">
+              <h3 class="pattern-detail-title examples">Examples</h3>
+              <p class="pattern-detail-text examples">Examples will be added here...</p>
+            </div>
+          `;
+          
+          patternModal.style.display = 'flex';
+        });
+      });
+      
+      // Close pattern modal when clicking close button or outside modal
+      patternModalClose.addEventListener('click', () => {
+        patternModal.style.display = 'none';
+      });
+      
+      patternModal.addEventListener('click', (e) => {
+        if (e.target === patternModal) {
+          patternModal.style.display = 'none';
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setupTabs();
+      setupCapabilityCards();
+      setupPatternCards();
+      showSection('capabilities-section');
+      setActiveTab('tab-capabilities');
+    });
+  </script>
+</body>
+</html> 

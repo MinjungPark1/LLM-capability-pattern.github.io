@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Test</title>
+</head>
+<body>
+  <h1>Data Loading Test</h1>
+  <div id="test-results"></div>
+  
+  <script>
+    async function testDataLoading() {
+      const resultsDiv = document.getElementById('test-results');
+      
+      try {
+        const response = await fetch('taxonomy.json');
+        const data = await response.json();
+        
+        resultsDiv.innerHTML = `
+          <h2>✅ Data loaded successfully!</h2>
+          <p><strong>Capabilities:</strong> ${data.capabilities ? data.capabilities.length : 0}</p>
+          <p><strong>Patterns:</strong> ${data.patterns ? data.patterns.length : 0}</p>
+          <h3>Capability Themes:</h3>
+          <ul>
+            ${data.capabilities ? [...new Set(data.capabilities.map(c => c.theme))].map(theme => `<li>${theme}</li>`).join('') : 'None'}
+          </ul>
+          <h3>Pattern Categories:</h3>
+          <ul>
+            ${data.patterns ? [...new Set(data.patterns.map(p => p.category))].map(category => `<li>${category}</li>`).join('') : 'None'}
+          </ul>
+        `;
+      } catch (error) {
+        resultsDiv.innerHTML = `
+          <h2>❌ Error loading data</h2>
+          <p><strong>Error:</strong> ${error.message}</p>
+        `;
+      }
+    }
+    
+    testDataLoading();
+  </script>
+</body>
+</html> 
